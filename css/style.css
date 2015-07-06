@@ -1,0 +1,183 @@
+html,body{
+	width:100%;
+	height:100%;
+	background-color: #000;
+	color:#fff;
+	margin:0;
+}
+#container{
+	position:absolute;
+	transform-style:preserve-3d;
+	left:40%;
+	top:30%;
+}
+#nose{
+	transform-style:preserve-3d;
+	position:absolute;
+}
+.nosePiece{
+	position: absolute;
+	width:0;
+	height:0;
+	border-bottom:300px solid #bbbbb4;
+	border-left: 45px solid transparent;
+	border-right: 45px solid transparent;
+}	
+#noseLeft{
+	transform:rotateY(90deg) translateZ(22px) rotateX(8.7deg);
+}
+#noseTop{
+	transform:rotateY(0deg) translateZ(22px) rotateX(8.7deg);
+}
+#noseRight{
+	transform:rotateY(-90deg) translateZ(22px) rotateX(8.7deg);
+}
+#noseBottom{
+	transform:rotateY(180deg) translateZ(22px) rotateX(8.7deg);
+}
+
+#mainBody{
+	transform-style:preserve-3d;
+	position:absolute;
+	transform:translateY(298px);
+}
+.mainPiece{
+	width:90px;
+	height:130px;
+	background-color: #bbbbb4;
+	position:absolute;
+}
+#mainLeft{
+	position:absolute;
+	transform:rotateY(90deg) translateZ(44.5px);
+}
+#mainRight{
+	position:absolute;
+	transform:rotateY(-90deg) translateZ(44.5px);
+}
+#mainBottom{
+	position:absolute;
+	transform:rotateY(180deg) translateZ(44.5px);
+}
+#mainBack{
+	position:absolute;
+	transform:rotateX(90deg) translateZ(-70px) translateY(15px);
+	height:120px;
+}
+#cockpit{
+	transform-style:preserve-3d;
+	position:absolute;
+}
+.cpSide{
+	position: absolute;
+	width:0;
+	height:70px;
+	border-top:60px solid transparent;
+	border-right:30px solid #bbbbb4;
+}
+#cockpitLeft{
+	position: absolute;
+	transform:rotateY(90deg) translateZ(74.5px) translateX(-59px);
+}
+#cockpitRight{
+	position: absolute;
+	transform:rotateY(90deg) translateZ(-15px) translateX(-59px);
+}
+#cockpitTop{
+	position: absolute;
+	width:90px;
+	height:70px;
+	background-color: #bbbbb4;
+	transform: translateZ(74px) translateY(60px);
+}
+#cockpitWind{
+	position: absolute;
+	width:90px;
+	height:67.08px;
+	background: rgba(60,60,60,.7);
+	transform:translateZ(59px) translateY(-3px) rotateX(206.56505117707799deg);
+}
+#left{
+	transform-style:preserve-3d;
+	position:absolute;
+}
+#leftPylon{
+	transform-style:preserve-3d;
+	position:absolute;
+	transform:translateY(350px) translateX(90px);
+}
+
+#rightPylon{
+	transform-style:preserve-3d;
+	position:absolute;
+	transform:translateY(350px) translateX(-120px);
+}
+.pylonPiece{
+	width:120px;
+	height:30px;
+	background-color: #bbbbb4;
+	position:absolute;
+}
+#pylonLeft{
+	position: absolute;
+	transform:rotateX(90deg) translateZ(15px);
+}
+#pylonRight{
+	position: absolute;
+	transform:rotateX(-90deg) translateZ(15px);
+}
+#pylonTop{
+	position: absolute;
+	transform:translateZ(15px);
+}
+#pylonBottom{
+	position: absolute;
+	transform:rotateX(180deg) translateZ(15px);
+}
+#leftEng{
+	transform-style:preserve-3d;
+	position:absolute;
+	transform:translateY(320px) translateX(230px);
+}
+#rightEng{
+	transform-style:preserve-3d;
+	position:absolute;
+	transform:translateY(320px) translateX(-150px);
+}
+.engPiece{
+	position:absolute;
+	width:10px;
+	height:100px;
+	background-color:#bbbbb4;
+}
+.engCapF{
+	position:absolute;
+	width:70px;
+	height:70px;
+	border-radius:50%;
+	background-image:url('../img/engineFan.jpg');
+	background-size:contain;
+	transform:rotateX(90deg) translateZ(30px) translateX(-30px);
+	animation:fanSpin .1s linear infinite;
+	-webkit-animation:fanSpin .1s linear infinite;
+	filter:blur(1px);
+	-webkit-filter:blur(1px);
+}
+.engCapB{
+	position:absolute;
+	width:70px;
+	height:70px;
+	border-radius:50%;
+	background-color: #99f;
+	transform:rotateX(90deg) translateZ(-65px) translateX(-30px);
+	box-shadow: 0 0 20px 5px #99f;
+}
+@keyframes fanSpin {
+	from {transform:rotateX(90deg) translateZ(30px) translateX(-30px) rotateZ(0deg);}
+	to {transform:rotateX(90deg) translateZ(30px) translateX(-30px) rotateZ(360deg);}
+}
+
+@-webkit-keyframes fanSpin {
+	from {transform:rotateX(90deg) translateZ(30px) translateX(-30px) rotateZ(0deg);}
+	to {transform:rotateX(90deg) translateZ(30px) translateX(-30px) rotateZ(360deg);}
+}
