@@ -2,8 +2,8 @@ var notBooming = true; //not currently exploding. Generally good thing.
 var firing = false;
 var posX, posY;
 document.onmousemove = function(e) {
-    posX = (e.x || e.clientX)+$(document).scrollLeft();
-    posY = (e.y || e.clientY)+$(document).scrollTop();
+    posX = (e.x || e.clientX) + $(document).scrollLeft();
+    posY = (e.y || e.clientY) + $(document).scrollTop();
     if (!firing) {
         $('#lazCont').css({
             'left': (posX - 54) + 'px',
@@ -17,13 +17,13 @@ document.onmousemove = function(e) {
     }
 
 }
-var updSite=function(){
-	var theSite = $('#website').val();
-	if (theSite.indexOf('http://')!=0 && theSite.indexOf('https://')!=0){
-		theSite = 'http://'+theSite;
-	}
-	console.log(theSite)
-	$('#targ').attr('src',theSite)
+var updSite = function() {
+    var theSite = $('#website').val();
+    if (theSite.indexOf('http://') != 0 && theSite.indexOf('https://') != 0) {
+        theSite = 'http://' + theSite;
+    }
+    console.log(theSite)
+    $('#targ').attr('src', theSite)
 }
 document.onkeyup = function(e) {
     if (e.which == 66) {
@@ -47,7 +47,8 @@ var lazFire = function(amt) {
         var lazInScale = ((100 - tempAmt) / 100) * 25;
         var lazOutScale = ((100 - tempAmt) / 100) * 55;
         var lazOutLeft = 55 - lazOutScale;
-        var lazGloOp =  ((100 - tempAmt) / 100) * .4;
+        var lazGloOp = ((100 - tempAmt) / 100) * .4;
+        var pageDark = (50*(tempAmt/100))+50;
         $('#lazIn').css({
             'border-left': lazInScale + 'px solid transparent',
             'border-right': lazInScale + 'px solid transparent'
@@ -57,7 +58,11 @@ var lazFire = function(amt) {
             'border-left': lazOutScale + 'px solid transparent',
             'border-right': lazOutScale + 'px solid transparent'
         })
-        $('#lazGlo').css('opacity',lazGloOp);//gloooop
+        $('#lazGlo').css('opacity', lazGloOp); //gloooop
+        $('iframe').css({
+            '-webkit-filter': 'brightness('+pageDark+'%)',
+            'filter': 'brightness('+pageDark+'%)'
+        })
         tempAmt--;
         console.log(tempAmt)
         if (!tempAmt) {
@@ -71,7 +76,7 @@ var lazFire = function(amt) {
                 'border-left': '0px solid topransparent',
                 'border-right': '0px solid transparent'
             })
-            $('#lazGlo').css('opacity','0')
+            $('#lazGlo').css('opacity', '0')
             firing = false;
             console.log('boom amt ', amt)
             boom(amt);
@@ -179,6 +184,10 @@ var boom = function(amt) {
         } else {
             notBooming = true;
             $('#boomCont').empty();
+            $('iframe').css({
+                '-webkit-filter': 'brightness(100%)',
+                'filter': 'brightness(100%)'
+            })
         }
     }
 }
