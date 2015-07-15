@@ -37,10 +37,15 @@ var avgLeft;
 var avgTop;
 var currScrollTop = 0;
 var currScrollLeft = 0;
+var snd = document.getElementById('lazSound');
 var lazFire = function(amt) {
     firing = true
     var tempAmt = amt;
     $('#lazCont').css('display', 'block')
+    //sound
+    snd.currentTime = 1.7;
+    console.log(snd.currentTime)
+    snd.play();
     var t = setInterval(function() {
         //interator scales lazIn from 0-25
         //and lazOut from 0-55
@@ -79,6 +84,7 @@ var lazFire = function(amt) {
             $('#lazGlo').css('opacity', '0')
             firing = false;
             console.log('boom amt ', amt)
+            snd.currentTime = 4.2;
             boom(amt);
         }
     }, 20)
