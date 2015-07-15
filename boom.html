@@ -7,7 +7,8 @@
 </head>
 
 <body>
-    WAT DO:
+    <div id='instShow' onclick='$("#inst").toggle();' title='Show/hide instructions'>X</div>
+    <div id='inst'>WAT DO:
     <ul>
         <li>Mouse to aim</li>
         <li>'f' to fire!</li>
@@ -18,6 +19,7 @@
             </ol>
         </li>
     </ul>
+    </div>
     <input id='website' value='http://www.w3schools.com' />
     <button onclick='updSite()'>Change site</button>
     <iframe src='http://www.w3schools.com' id='targ'></iframe>

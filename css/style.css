@@ -331,6 +331,14 @@ iframe{
 	width:100vw;
 	height:100vh;
 }
+#instShow{
+	background-color:#933;
+	width:20px;
+	text-align:center;
+}
+#instShow:hover{
+	background-color:#a55;
+}
 @keyframes fanSpin {
     from {
         transform: rotateX(90deg) translateZ(30px) translateX(-30px) rotateZ(0deg);
