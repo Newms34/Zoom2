@@ -1,183 +1,350 @@
-html,body{
-	width:100%;
-	height:100%;
-	background-color: #000;
-	color:#fff;
-	margin:0;
-}
-#container{
-	position:absolute;
-	transform-style:preserve-3d;
-	left:40%;
-	top:30%;
-}
-#nose{
-	transform-style:preserve-3d;
-	position:absolute;
-}
-.nosePiece{
-	position: absolute;
-	width:0;
-	height:0;
-	border-bottom:300px solid #bbbbb4;
-	border-left: 45px solid transparent;
-	border-right: 45px solid transparent;
-}	
-#noseLeft{
-	transform:rotateY(90deg) translateZ(22px) rotateX(8.7deg);
-}
-#noseTop{
-	transform:rotateY(0deg) translateZ(22px) rotateX(8.7deg);
-}
-#noseRight{
-	transform:rotateY(-90deg) translateZ(22px) rotateX(8.7deg);
-}
-#noseBottom{
-	transform:rotateY(180deg) translateZ(22px) rotateX(8.7deg);
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
 }
 
-#mainBody{
-	transform-style:preserve-3d;
-	position:absolute;
-	transform:translateY(298px);
-}
-.mainPiece{
-	width:90px;
-	height:130px;
-	background-color: #bbbbb4;
-	position:absolute;
-}
-#mainLeft{
-	position:absolute;
-	transform:rotateY(90deg) translateZ(44.5px);
-}
-#mainRight{
-	position:absolute;
-	transform:rotateY(-90deg) translateZ(44.5px);
-}
-#mainBottom{
-	position:absolute;
-	transform:rotateY(180deg) translateZ(44.5px);
-}
-#mainBack{
-	position:absolute;
-	transform:rotateX(90deg) translateZ(-70px) translateY(15px);
-	height:120px;
-}
-#cockpit{
-	transform-style:preserve-3d;
-	position:absolute;
-}
-.cpSide{
-	position: absolute;
-	width:0;
-	height:70px;
-	border-top:60px solid transparent;
-	border-right:30px solid #bbbbb4;
-}
-#cockpitLeft{
-	position: absolute;
-	transform:rotateY(90deg) translateZ(74.5px) translateX(-59px);
-}
-#cockpitRight{
-	position: absolute;
-	transform:rotateY(90deg) translateZ(-15px) translateX(-59px);
-}
-#cockpitTop{
-	position: absolute;
-	width:90px;
-	height:70px;
-	background-color: #bbbbb4;
-	transform: translateZ(74px) translateY(60px);
-}
-#cockpitWind{
-	position: absolute;
-	width:90px;
-	height:67.08px;
-	background: rgba(60,60,60,.7);
-	transform:translateZ(59px) translateY(-3px) rotateX(206.56505117707799deg);
-}
-#left{
-	transform-style:preserve-3d;
-	position:absolute;
-}
-#leftPylon{
-	transform-style:preserve-3d;
-	position:absolute;
-	transform:translateY(350px) translateX(90px);
+#container {
+    position: absolute;
+    transform-style: preserve-3d;
+    transform-origin: 250px 50%;
+    left: 40%;
+    top: 30%;
 }
 
-#rightPylon{
-	transform-style:preserve-3d;
-	position:absolute;
-	transform:translateY(350px) translateX(-120px);
+#nose {
+    transform-style: preserve-3d;
+    position: absolute;
 }
-.pylonPiece{
-	width:120px;
-	height:30px;
-	background-color: #bbbbb4;
-	position:absolute;
+
+.nosePiece {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 300px solid #bbbbb4;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
 }
-#pylonLeft{
+
+#noseLeft {
+    transform: rotateY(90deg) translateZ(22px) rotateX(8.7deg);
+}
+
+#noseTop {
+    transform: rotateY(0deg) translateZ(22px) rotateX(8.7deg);
+}
+
+#noseRight {
+    transform: rotateY(-90deg) translateZ(22px) rotateX(8.7deg);
+}
+
+#noseBottom {
+    transform: rotateY(180deg) translateZ(22px) rotateX(8.7deg);
+}
+
+#mainBody {
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 298px;
+}
+
+#hype {
+    transform-style: preserve-3d;
+    position: absolute;
+}
+
+.mainPiece {
+    width: 90px;
+    height: 130px;
+    background-color: #bbbbb4;
+    position: absolute;
+}
+
+#mainLeft {
+    position: absolute;
+    transform: rotateY(90deg) translateZ(44.5px);
+}
+
+#mainRight {
+    position: absolute;
+    transform: rotateY(-90deg) translateZ(44.5px);
+}
+
+#mainBottom {
+    position: absolute;
+    transform: rotateY(180deg) translateZ(44.5px);
+}
+
+#mainBack {
+    position: absolute;
+    transform: rotateX(90deg) translateZ(-70px) translateY(15px);
+    height: 120px;
+}
+
+#cockpit {
+    transform-style: preserve-3d;
+    position: absolute;
+}
+
+.cpSide {
+    position: absolute;
+    width: 0;
+    height: 70px;
+    border-top: 60px solid transparent;
+    border-right: 30px solid #bbbbb4;
+}
+
+#cockpitLeft {
+    position: absolute;
+    transform: rotateY(90deg) translateZ(74.5px) translateX(-59px);
+}
+
+#cockpitRight {
+    position: absolute;
+    transform: rotateY(90deg) translateZ(-15px) translateX(-59px);
+}
+
+#cockpitTop {
+    position: absolute;
+    width: 90px;
+    height: 70px;
+    background-color: #bbbbb4;
+    transform: translateZ(74px) translateY(60px);
+}
+
+#cockpitWind {
+    position: absolute;
+    width: 90px;
+    height: 67.08px;
+    background: rgba(60, 60, 60, .7);
+    transform: translateZ(59px) translateY(-3px) rotateX(206.56505117707799deg);
+}
+
+#left {
+    transform-style: preserve-3d;
+    position: absolute;
+}
+
+#right {
+    transform-style: preserve-3d;
+    position: absolute;
+}
+
+#leftPylon {
+    transform-style: preserve-3d;
+    position: absolute;
+    transform: translateY(350px) translateX(90px);
+}
+
+#rightPylon {
+    transform-style: preserve-3d;
+    position: absolute;
+    transform: translateY(350px) translateX(-120px);
+}
+
+.pylonPiece {
+    width: 120px;
+    height: 30px;
+    background-color: #bbbbb4;
+    position: absolute;
+}
+
+#pylonLeft {
+    position: absolute;
+    transform: rotateX(90deg) translateZ(15px);
+}
+
+#pylonRight {
+    position: absolute;
+    transform: rotateX(-90deg) translateZ(15px);
+}
+
+#pylonTop {
+    position: absolute;
+    transform: translateZ(15px);
+}
+
+#pylonBottom {
+    position: absolute;
+    transform: rotateX(180deg) translateZ(15px);
+}
+
+#leftEng {
+    transform-style: preserve-3d;
+    position: absolute;
+    transform: translateY(320px) translateX(230px);
+}
+
+#rightEng {
+    transform-style: preserve-3d;
+    position: absolute;
+    transform: translateY(320px) translateX(-150px);
+}
+
+.engPiece {
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    background-color: #bbbbb4;
+}
+
+.engCapF {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url('../img/engineFan.jpg');
+    background-size: contain;
+    transform: rotateX(90deg) translateZ(30px) translateX(-30px);
+    animation: fanSpin .1s linear infinite;
+    -webkit-animation: fanSpin .1s linear infinite;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.engCapB {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #99f;
+    transform: rotateX(90deg) translateZ(-65px) translateX(-30px);
+    box-shadow: 0 0 20px 5px #99f;
+}
+
+#boomCont {
+    z-index: 999;
+    transform: translateZ(900px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.boomClass {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fed;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+
+.shockWave {
+    width: 100px;
+    height: 50px;
+    transform-origin: center center;
+    border-radius: 50%;
+    box-shadow: 0 0 50px hsla(60, 20%, 90%, 1) inset, 0 0 10px hsla(60, 20%, 90%, 1);
+    position: absolute;
+    left: 0%;
+}
+
+#spacer {
+    position: absolute;
+    left: 5000px;
+    top: 5000px;
+}
+
+#lazCont {
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#lazIn {
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 1000px solid #fff;
+    border-left: 0 solid transparent;
+    border-right: 0 solid transparent;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    z-index: 6;
+    pointer-events: none;
+}
+
+#lazOut {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 1000px solid #aaf;
+    border-left: 0 solid transparent;
+    border-right: 0 solid transparent;
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+    z-index: 2;
+    pointer-events: none;
+}
+
+#reticle {
+    position: absolute;
+    border:5px solid red;
+    border-radius:50%;
+    width:100px;
+    height:100px;
+    pointer-events: none;
+}
+#retHor{
 	position: absolute;
-	transform:rotateX(90deg) translateZ(15px);
+	width:100px;
+	height:5px;
+	background-color: #f00;
+	top:47px;
+	pointer-events: none;
 }
-#pylonRight{
+#retVer{
 	position: absolute;
-	transform:rotateX(-90deg) translateZ(15px);
-}
-#pylonTop{
-	position: absolute;
-	transform:translateZ(15px);
-}
-#pylonBottom{
-	position: absolute;
-	transform:rotateX(180deg) translateZ(15px);
-}
-#leftEng{
-	transform-style:preserve-3d;
-	position:absolute;
-	transform:translateY(320px) translateX(230px);
-}
-#rightEng{
-	transform-style:preserve-3d;
-	position:absolute;
-	transform:translateY(320px) translateX(-150px);
-}
-.engPiece{
-	position:absolute;
-	width:10px;
 	height:100px;
-	background-color:#bbbbb4;
+	width:5px;
+	background-color: #f00;
+	left:47px;
+	pointer-events: none;
 }
-.engCapF{
-	position:absolute;
-	width:70px;
-	height:70px;
-	border-radius:50%;
-	background-image:url('../img/engineFan.jpg');
-	background-size:contain;
-	transform:rotateX(90deg) translateZ(30px) translateX(-30px);
-	animation:fanSpin .1s linear infinite;
-	-webkit-animation:fanSpin .1s linear infinite;
-	filter:blur(1px);
-	-webkit-filter:blur(1px);
+#lazGlo{
+	position: absolute;
+	border-radius: 50%;
+	width:500px;
+	height:500px;
+	-webkit-filter: blur(80px);
+    filter: blur(80px);
+    background-color: #f00;
+    opacity:0;
+    left:-200px;
+    top:-200px;
+    pointer-events: none;
 }
-.engCapB{
-	position:absolute;
-	width:70px;
-	height:70px;
-	border-radius:50%;
-	background-color: #99f;
-	transform:rotateX(90deg) translateZ(-65px) translateX(-30px);
-	box-shadow: 0 0 20px 5px #99f;
+iframe{
+	pointer-events:none;
+	width:100vw;
+	height:100vh;
 }
 @keyframes fanSpin {
-	from {transform:rotateX(90deg) translateZ(30px) translateX(-30px) rotateZ(0deg);}
-	to {transform:rotateX(90deg) translateZ(30px) translateX(-30px) rotateZ(360deg);}
+    from {
+        transform: rotateX(90deg) translateZ(30px) translateX(-30px) rotateZ(0deg);
+    }
+    to {
+        transform: rotateX(90deg) translateZ(30px) translateX(-30px) rotateZ(360deg);
+    }
 }
 
 @-webkit-keyframes fanSpin {
-	from {transform:rotateX(90deg) translateZ(30px) translateX(-30px) rotateZ(0deg);}
-	to {transform:rotateX(90deg) translateZ(30px) translateX(-30px) rotateZ(360deg);}
+    from {
+        transform: rotateX(90deg) translateZ(30px) translateX(-30px) rotateZ(0deg);
+    }
+    to {
+        transform: rotateX(90deg) translateZ(30px) translateX(-30px) rotateZ(360deg);
+    }
 }

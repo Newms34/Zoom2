@@ -7,95 +7,104 @@
 </head>
 
 <body>
+INST:
+<ul>
+<li>Mouse to rotate</li>
+<li>Mouse wheel to increase/decrease engine throttle</li>
+<li>'b' to explode</li>
+<li>'h' to stretch (I call this hyperspace, but whatever...)</li>
+</ul>
     <div id='container'>
-        <div id='nose'>
-            <div id='noseTop' class='nosePiece metal'></div>
-            <div id='noseBottom' class='nosePiece metal'></div>
-            <div id='noseLeft' class='nosePiece metal'></div>
-            <div id='noseRight' class='nosePiece metal'></div>
-        </div>
-        <div id='mainBody'>
-            <div id='cockpit'>
-                <div id='cockpitLeft' class='cpSide metal'></div>
-                <div id='cockpitRight' class='cpSide metal'></div>
-                <div id='cockpitTop' class='metal'></div>
-                <div id='cockpitWind'></div>
+        <div id='hype'>
+            <div id='nose'>
+                <div id='noseTop' class='nosePiece metal'></div>
+                <div id='noseBottom' class='nosePiece metal'></div>
+                <div id='noseLeft' class='nosePiece metal'></div>
+                <div id='noseRight' class='nosePiece metal'></div>
             </div>
-            <div id='mainBottom' class='mainPiece metal'></div>
-            <div id='mainLeft' class='mainPiece metal'></div>
-            <div id='mainRight' class='mainPiece metal'></div>
-            <div id='mainBack' class='mainPiece metal'></div>
-        </div>
-        <div id='left'>
-            <div id='leftPylon'>
-                <div id='pylonLeft' class='pylonPiece metal'></div>
-                <div id='pylonRight' class='pylonPiece metal'></div>
-                <div id='pylonTop' class='pylonPiece metal'></div>
-                <div id='pylonBottom' class='pylonPiece metal'></div>
+            <div id='mainBody'>
+                <div id='cockpit'>
+                    <div id='cockpitLeft' class='cpSide metal'></div>
+                    <div id='cockpitRight' class='cpSide metal'></div>
+                    <div id='cockpitTop' class='metal'></div>
+                    <div id='cockpitWind'></div>
+                </div>
+                <div id='mainBottom' class='mainPiece metal'></div>
+                <div id='mainLeft' class='mainPiece metal'></div>
+                <div id='mainRight' class='mainPiece metal'></div>
+                <div id='mainBack' class='mainPiece metal'></div>
             </div>
-            <div id='leftEng'>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engCapF'></div>
-                <div class='engCapB'></div>
+            <div id='left'>
+                <div id='leftPylon'>
+                    <div id='pylonLeft' class='pylonPiece metal'></div>
+                    <div id='pylonRight' class='pylonPiece metal'></div>
+                    <div id='pylonTop' class='pylonPiece metal'></div>
+                    <div id='pylonBottom' class='pylonPiece metal'></div>
+                </div>
+                <div id='leftEng'>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engCapF'></div>
+                    <div class='engCapB'></div>
+                </div>
             </div>
-        </div>
-        <div id='right'>
-            <div id='rightPylon'>
-                <div id='pylonLeft' class='pylonPiece metal'></div>
-                <div id='pylonRight' class='pylonPiece metal'></div>
-                <div id='pylonTop' class='pylonPiece metal'></div>
-                <div id='pylonBottom' class='pylonPiece metal'></div>
-            </div>
-            <div id='rightEng'>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engPiece metal'></div>
-                <div class='engCapF'></div>
-                <div class='engCapB metal'></div>
+            <div id='right'>
+                <div id='rightPylon'>
+                    <div id='pylonLeft' class='pylonPiece metal'></div>
+                    <div id='pylonRight' class='pylonPiece metal'></div>
+                    <div id='pylonTop' class='pylonPiece metal'></div>
+                    <div id='pylonBottom' class='pylonPiece metal'></div>
+                </div>
+                <div id='rightEng'>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engPiece metal'></div>
+                    <div class='engCapF'></div>
+                    <div class='engCapB metal'></div>
+                </div>
             </div>
         </div>
     </div>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3d Animation Demo</title>
+    <link rel='stylesheet' href="./css/style.css">
+</head>
+
+<body>
+    INST:
+    <ul>
+        <li>Mouse to aim</li>
+        <li>'b' to explode</li>
+    </ul>
+    <input id='website' value='http://www.w3schools.com'/><button onclick='updSite()'>Change site</button>
+    <iframe src='http://www.w3schools.com' id='targ'></iframe>
+    <div id='reticle'>
+        <div id='retHor'></div>
+        <div id='retVer'></div>
+        <div id='lazGlo'></div>
+    </div>
+    <div id='lazCont'>
+        <div id='lazOut'>
+            <div id='lazIn'></div>
+        </div>
+    </div>
+    <div id='boomCont'></div>
+    <div id='spacer'>&nbsp;</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src='./js/boom.js'></script>
+</body>
+
+</html>
